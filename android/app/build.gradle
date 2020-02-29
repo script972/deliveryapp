@@ -41,8 +41,8 @@ android {
     }
 
     defaultConfig {
-        // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
-        applicationId "com.smartersvision.deliveryboy"
+
+        applicationId "com.script972.instadrinkdelivery"
         minSdkVersion 17
         targetSdkVersion 28
         versionCode flutterVersionCode.toInteger()
@@ -50,23 +50,23 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
-   /* signingConfigs {
+    signingConfigs {
         release {
             keyAlias keystoreProperties['keyAlias']
             keyPassword keystoreProperties['keyPassword']
             storeFile file(keystoreProperties['storeFile'])
             storePassword keystoreProperties['storePassword']
         }
-    }*/
+    }
 
-   /* buildTypes {
+    buildTypes {
         release {
             // TODO: Add your own signing config for the release build.
             // Signing with the debug keys for now, so `flutter run --release` works.
 //            signingConfig signingConfigs.debug
             signingConfig signingConfigs.release
         }
-    }*/
+    }
 }
 
 flutter {

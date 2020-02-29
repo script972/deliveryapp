@@ -84,7 +84,7 @@ class MyApp extends StatelessWidget {
               builder: (context, Locale value, _) {
                 print(value);
                 return MaterialApp(
-                  title: 'Delivery Boy',
+                  title: 'Instadrink',
                   initialRoute: '/Splash',
                   onGenerateRoute: RouteGenerator.generateRoute,
                   debugShowCheckedModeBanner: false,

@@ -55,21 +55,20 @@ class SplashScreenState extends StateMVC<SplashScreen> {
             crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              Icon(
-                Icons.directions_bike,
-                size: 90,
-                color: Theme.of(context).scaffoldBackgroundColor,
+              Image.asset(
+                'assets/img/logo_image.png',
+                width: 150.0,
               ),
               Text(
-                'Delivery Boy App',
-                style: Theme.of(context)
-                    .textTheme
-                    .display1
-                    .merge(TextStyle(color: Theme.of(context).scaffoldBackgroundColor)),
+                'Instadrink delivery',
+                style: Theme.of(context).textTheme.display1.merge(TextStyle(
+                    color: Theme.of(context).scaffoldBackgroundColor)),
               ),
               SizedBox(height: 50),
+
               CircularProgressIndicator(
-                valueColor: AlwaysStoppedAnimation<Color>(Theme.of(context).scaffoldBackgroundColor),
+                valueColor: AlwaysStoppedAnimation<Color>(
+                    Theme.of(context).scaffoldBackgroundColor),
               ),
             ],
           ),
